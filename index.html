@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yash Nemade | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="hero-section">
     <nav>
-      <div class="logo">Portfolio.</div>
+      <div class="logo">Yash Portfolio</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -19,70 +20,97 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
     <div class="hero-content">
       <div class="text-content">
-        <h1>Hello, It's Me</h1>
+        <h1>Hello, I'm</h1>
         <h2>Yash Nemade</h2>
-        <p>And I'm a <span>Web Developer</span></p>
-        <p>BCA Completed (2022–2025) from D.Y. Patil International University, now pursuing MCA.</p>
+        <p>I'm a <span>Web Developer</span> passionate about building modern websites and exploring cloud and cybersecurity.</p>
+        <p>BCA (2022–2025) from D.Y. Patil International University | Pursuing MCA</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
         <a href="#" class="btn">Download CV</a>
       </div>
+
       <div class="image-content">
-        <img src="your-photo.jpg" alt="Yash Nemade" class="profile-img" />
+        <img src="your-photo.jpg" alt="Yash Nemade" class="profile-img"/>
       </div>
     </div>
   </header>
 
+  <!-- About Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>I am a passionate MCA student with a background in BCA. I love building websites and exploring cybersecurity and cloud technologies.</p>
+    <p>I am a passionate MCA student with a strong foundation in BCA. 
+      I enjoy turning complex problems into simple, beautiful, and intuitive designs. I’m also keen on cybersecurity and cloud computing technologies.</p>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" class="section">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>C Programming</li>
+      <li>Python Basics</li>
       <li>AWS Cloud</li>
-      <li>Azure</li>
+      <li>Microsoft Azure</li>
       <li>Cloud Computing</li>
       <li>DBMS</li>
       <li>Cybersecurity Basics</li>
     </ul>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="project-gallery">
+      
+      <!-- Project 1 -->
       <div class="project-card">
-        <img src="secure-notes.jpg" alt="Secure Notes" />
+        <img src="images/secure-notes-screenshot.jpg" alt="Secure Notes Screenshot"/>
         <div class="project-info">
           <h3>Secure Notes Website</h3>
-          <p>Encrypted note-taking app using AES and Flask.</p>
+          <p>An AES-encrypted note-taking web app using Flask for secure data management.</p>
+          <a href="https://github.com/yourusername/secure-notes" target="_blank" class="btn small">View Code</a>
         </div>
       </div>
+
+      <!-- Project 2 -->
       <div class="project-card">
-        <img src="ebook-library.jpg" alt="eBook Library" />
+        <img src="images/ebook-library-ui.jpg" alt="eBook Library UI"/>
         <div class="project-info">
           <h3>eBook Library</h3>
-          <p>Online book management system with user login and downloads.</p>
+          <p>A digital library system where users can register, browse and download books.</p>
+          <a href="https://github.com/yourusername/ebook-library" target="_blank" class="btn small">View Code</a>
         </div>
       </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/cloud-dashboard-demo.jpg" alt="Cloud Dashboard Project"/>
+        <div class="project-info">
+          <h3>Cloud Resource Monitor</h3>
+          <p>Dashboard to visualize AWS resource usage using AWS SDK and charts.js.</p>
+          <a href="https://github.com/yourusername/cloud-dashboard" target="_blank" class="btn small">View Code</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section id="contact" class="section">
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-info">
     <h2>Contact</h2>
-    <p>Email: yashnemade12250@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+    <p>Email: <a href="mailto:yashnemade12250@gmail.com">yashnemade12250@gmail.com</a></p>
+    <p>Address: <a href="Gurudwara Chowk,Nigdi (411044)</p>
+    <p>GitHub: <a href="https://github.com/yashnemade-ai" target="_blank">github.com/yourusername</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Yash Nemade</p>
+    <p>&copy; 2025 Yash Nemade. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
