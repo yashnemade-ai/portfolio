@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yash Nemade | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yash Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header -->
-  <header class="hero-section">
-    <nav>
-      <div class="logo">Yash Portfolio</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Yash Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero-section">
     <div class="hero-content">
+      <div class="image-content">
+        <img class="profile-img" src="backround.jpeg" alt="Profile">
+      </div>
       <div class="text-content">
         <h1>Hello, I'm</h1>
         <h2>Yash Nemade</h2>
-        <p>I'm a <span>Web Developer</span> passionate about building modern websites and exploring cloud and cybersecurity.</p>
-        <p>BCA (2022–2025) from D.Y. Patil International University | Pursuing MCA</p>
-        <div class="social-icons">
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        </div>
+        <p>
+          I'm a <span>Web Developer</span> passionate about building modern websites and exploring cloud and cybersecurity.<br>
+          BCA (2022–2025) from D.Y. Patil International University | Pursuing MCA
+        </p>
         <a href="#" class="btn">Download CV</a>
       </div>
-
-      <div class="image-content">
-        <img src="2020-Audi-RS7-Sportback-007-2160.jpg" alt="Yash Nemade" class="profile-img" />
-      </div>
     </div>
-  </header>
+  </section>
 
   <!-- About Section -->
-  <section id="about" class="section">
+  <section class="section" id="about">
     <h2>About Me</h2>
-    <p>I am a passionate MCA student with a strong foundation in BCA. 
-      I enjoy turning complex problems into simple, beautiful, and intuitive designs. I’m also keen on cybersecurity and cloud computing technologies.</p>
+    <p>
+      I am a passionate MCA student with a strong foundation in BCA. I enjoy turning complex problems into simple, beautiful, and intuitive designs.
+      I’m also keen on cybersecurity and cloud computing technologies.
+    </p>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="section">
+  <section class="section" id="skills">
     <h2>Skills</h2>
     <ul class="skills-list">
-      <li>C Programming</li>
-      <li>Python Basics</li>
-      <li>AWS Cloud</li>
-      <li>Microsoft Azure</li>
-      <li>Cloud Computing</li>
-      <li>DBMS</li>
-      <li>Cybersecurity Basics</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>MongoDB</li>
+      <li>Cloud Basics</li>
     </ul>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="section">
+  <section class="section" id="projects">
     <h2>Projects</h2>
     <div class="project-gallery">
-      
-      <!-- Project 1 -->
       <div class="project-card">
+        <img src="backround.jpeg" alt="Project Image">
         <div class="project-info">
-          <h3>Secure Notes Website</h3>
-          <p>An AES-encrypted note-taking web app using Flask for secure data management.</p>
-          <a href="https://github.com/yourusername/secure-notes" target="_blank" class="btn small">View Code</a>
+          <h3>Project Title</h3>
+          <p>Short description about the project.</p>
         </div>
       </div>
-
-      <!-- Project 2 -->
-      <div class="project-card">
-        <div class="project-info">
-          <h3>eBook Library</h3>
-          <p>A digital library system where users can register, browse and download books.</p>
-          <a href="https://github.com/yourusername/ebook-library" target="_blank" class="btn small">View Code</a>
-        </div>
-      </div>
-
-
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="section contact-info">
+  <section class="section" id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:yashnemade12250@gmail.com">yashnemade12250@gmail.com</a></p>
-    <p>Address: <a href="Gurudwara Chowk,Nigdi (411044)</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yashnemade-ai</a></p>
+    <div class="contact-info">
+      <p>Email: yash@example.com</p>
+      <a href="#">LinkedIn</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Yash Nemade. All Rights Reserved.</p>
+    © 2025 Yash Nemade. All rights reserved.
   </footer>
 </body>
 </html>
