@@ -8,14 +8,13 @@
 }
 
 body {
-  background-color: #fdf7f2; /* fallback background */
+  background-color: #fdf7f2;
   color: #000;
   line-height: 1.6;
   font-weight: bold;
   position: relative;
 }
 
-/* Optional background overlay */
 body::before {
   content: "";
   position: fixed;
@@ -82,7 +81,7 @@ nav {
 .hero-section {
   padding: 5rem 2rem 3rem;
   text-align: center;
-  background-image: url('backround.jpeg');
+  background-image: url('laptop-office-plant-black-background-top-view.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
