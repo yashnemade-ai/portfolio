@@ -2,66 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Nemade | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Yash Nemade</h1>
-      <p class="subtitle">MCA Student • Web Developer</p>
+  <header class="hero-section">
+    <nav>
+      <div class="logo">Portfolio.</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <div class="text-content">
+        <h1>Hello, It's Me</h1>
+        <h2>Yash Nemade</h2>
+        <p>And I'm a <span>Web Developer</span></p>
+        <p>BCA Completed (2022–2025) from D.Y. Patil International University, now pursuing MCA.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+      <div class="image-content">
+        <img src="your-photo.jpg" alt="Yash Nemade" class="profile-img" />
+      </div>
     </div>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I am a passionate MCA student focused on web development, cybersecurity, and creative software design. I love transforming ideas into functional and elegant digital experiences.</p>
-    </div>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I am a passionate MCA student with a background in BCA. I love building websites and exploring cybersecurity and cloud technologies.</p>
   </section>
 
-  <section id="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span>Python</span>
-        <span>JavaScript</span>
-        <span>SQL</span>
-        <span>Flask</span>
-        <span>HTML & CSS</span>
-        <span>Cybersecurity Basics</span>
-      </div>
-    </div>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>C Programming</li>
+      <li>AWS Cloud</li>
+      <li>Azure</li>
+      <li>Cloud Computing</li>
+      <li>DBMS</li>
+      <li>Cybersecurity Basics</li>
+    </ul>
   </section>
 
-  <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-gallery">
       <div class="project-card">
-        <h3>🔐 Secure Notes Website</h3>
-        <p>Encrypted note-taking web app built with Flask and AES encryption algorithms.</p>
+        <img src="secure-notes.jpg" alt="Secure Notes" />
+        <div class="project-info">
+          <h3>Secure Notes Website</h3>
+          <p>Encrypted note-taking app using AES and Flask.</p>
+        </div>
       </div>
       <div class="project-card">
-        <h3>📚 eBook Library</h3>
-        <p>A complete eBook management platform with secure uploads, user login, and downloads.</p>
+        <img src="ebook-library.jpg" alt="eBook Library" />
+        <div class="project-info">
+          <h3>eBook Library</h3>
+          <p>Online book management system with user login and downloads.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:yashnemade12250@gmail.com">yashnemade12250@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/yashnemade-ai" target="_blank">github.com/yashnemade-ai</a></p>
-    </div>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: yashnemade12250@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Yash Nemade • All Rights Reserved</p>
-    </div>
+    <p>&copy; 2025 Yash Nemade</p>
   </footer>
 </body>
 </html>
