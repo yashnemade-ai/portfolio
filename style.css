@@ -197,7 +197,7 @@ nav {
 
 /* 🔶 About Section Background */
 #about {
-  background-image: url('laptop-office-plant-black-background-top-view.jpg');
+  background-image: url('Gold.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -248,6 +248,12 @@ nav {
 
 /* Projects */
 .project-gallery {
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -256,6 +262,12 @@ nav {
 
 .project-card {
   background: #ffffff;
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -263,16 +275,34 @@ nav {
 }
 
 .project-card:hover {
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   transform: translateY(-6px);
 }
 
 .project-card img {
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
 .project-info {
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   padding: 1rem;
 }
 
@@ -290,6 +320,12 @@ nav {
 /* Contact */
 .contact-info p,
 .contact-info a {
+  background-image: url('Gold.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
   font-size: 1rem;
   color: #000;
   font-weight: bold;
