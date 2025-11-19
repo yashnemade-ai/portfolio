@@ -45,12 +45,28 @@ nav {
   color: black;
   font-weight: 600;
   transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #ff6600;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-links a:hover {
   color: #ff6600;
 }
-
 
 /* HERO SECTION */
 .hero-section {
@@ -79,7 +95,7 @@ nav {
   color: white;
 }
 
-/* Profile Image */
+/* PROFILE IMAGE */
 .hero-img {
   width: 150px;
   height: 150px;
@@ -149,6 +165,23 @@ nav {
   font-size: 2.2rem;
   color: #ff6600;
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.section h2::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background: #ff6600;
+  display: block;
+  margin: 0.4rem auto 0;
+  transition: width .35s ease;
+}
+
+.section h2:hover::after {
+  width: 60px;
 }
 
 /* SKILLS */
@@ -166,11 +199,12 @@ nav {
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: .3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-list li:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
 }
 
 /* PROJECTS */
@@ -185,11 +219,12 @@ nav {
   padding: 1.5rem;
   border-radius: 14px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: .3s;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-12px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
 }
 
 .project-info h3 {
@@ -197,11 +232,40 @@ nav {
   margin-bottom: .5rem;
 }
 
-/* CONTACT */
+/* Website Links Styling */
+.project-info a,
 .contact-info a {
   color: #ff6600;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: bold;
+  position: relative;
+}
+
+.project-info a::after,
+.contact-info a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #ff6600;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: width .3s ease;
+}
+
+.project-info a:hover::after,
+.contact-info a:hover::after {
+  width: 100%;
+}
+
+/* CONTACT SECTION BOX */
+.contact-info {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 14px;
+  max-width: 650px;
+  margin: 2rem auto 0;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
 }
 
 /* FOOTER */
