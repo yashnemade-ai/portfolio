@@ -261,7 +261,6 @@ nav {
   margin-top: 2rem;
 }
 
-/* Project Card */
 .project-card {
   background: #ffffff;
   padding: 2rem;
@@ -279,7 +278,6 @@ nav {
   transform: scale(1.03);
 }
 
-/* Project Title */
 .project-info h3 {
   color: #ff6600;
   margin-bottom: 0.7rem;
@@ -287,7 +285,6 @@ nav {
   font-size: 1.8rem;
 }
 
-/* Project Description */
 .project-info p {
   font-size: 1.22rem;
   line-height: 1.9;
@@ -295,13 +292,13 @@ nav {
   font-weight: 600;
 }
 
-/* Project Link Style */
+/* Project links */
 .project-info a {
-  color: #ff6600;
+  color: #ff6600 !important;
   font-weight: 700;
   text-decoration: none;
   position: relative;
-  font-size: 1.15rem;
+  font-size: 1.20rem;
 }
 
 .project-info a::after {
@@ -339,20 +336,16 @@ nav {
   transform: scale(1.03);
 }
 
-/* CONTACT LINKS – ORANGE HOVER */
+/* CONTACT LINKS — ORANGE ALWAYS + BIGGER + ANIMATION */
 .contact-info a {
-  color: #333 !important;
-  font-weight: 600;
-  text-decoration: none !important;
+  color: #ff6600 !important;
+  font-weight: 700;
+  font-size: 1.20rem;
+  text-decoration: none;
   position: relative;
   transition: color .3s ease;
 }
 
-.contact-info a:hover {
-  color: #ff6600 !important;
-}
-
-/* underline animation */
 .contact-info a::after {
   content: "";
   height: 3px;
