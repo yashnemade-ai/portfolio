@@ -295,12 +295,6 @@ nav {
   font-weight: 600;
 }
 
-/* Highlighted Text */
-.project-info b {
-  color: #ff6600;
-  font-weight: 800;
-}
-
 /* Project Link Style */
 .project-info a {
   color: #ff6600;
@@ -345,19 +339,20 @@ nav {
   transform: scale(1.03);
 }
 
-/* CONTACT LINKS – ORANGE HOVER + ANIMATION */
+/* CONTACT LINKS – ORANGE HOVER */
 .contact-info a {
-  color: #333;
+  color: #333 !important;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: none !important;
   position: relative;
   transition: color .3s ease;
 }
 
 .contact-info a:hover {
-  color: #ff6600;
+  color: #ff6600 !important;
 }
 
+/* underline animation */
 .contact-info a::after {
   content: "";
   height: 3px;
