@@ -403,6 +403,32 @@ nav {
 .contact-row a:hover::after {
   width: 100%;
 }
+/* 📱 Mobile Screens */
+@media (max-width: 600px) {
+  .hero-img {
+    width: 120px;
+    height: 120px;
+    object-position: center 18%;
+  }
+}
+
+/* 💻 Medium Screens (Tablets + small laptops) */
+@media (max-width: 900px) {
+  .hero-img {
+    width: 140px;
+    height: 140px;
+    object-position: center 20%;
+  }
+}
+
+/* 🖥 Large Screens (Desktop + big laptop) */
+@media (min-width: 1200px) {
+  .hero-img {
+    width: 180px;
+    height: 180px;
+    object-position: center 25%;
+  }
+}
 
 
 /* FOOTER */
@@ -414,6 +440,7 @@ footer {
   color: white;
   font-weight: bold;
 }
+
 
 
 
