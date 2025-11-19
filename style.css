@@ -196,33 +196,39 @@ nav {
 }
 
 /* ------------------------------- */
-/* ABOUT SECTION UPGRADED */
-/* ------------------------------- */
-
+/* ABOUT SECTION — CARD + SHADOW + POP EFFECT */
 #about {
   background: #ffffff;
   padding: 3.5rem 1.5rem;
-  margin-top: 4rem;
   border-radius: 18px;
   max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  margin: 4rem auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+/* Hover Pop-Up */
 #about:hover {
   transform: translateY(-12px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
+/* Click Pop */
+#about:active {
+  transform: scale(1.03);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.20);
+}
+
+/* About Heading */
 #about h2 {
-  font-size: 2.6rem !important;
-  color: #ff6600;
+  font-size: 2.6rem;
   font-weight: 800;
+  color: #ff6600;
   margin-bottom: 1.5rem;
+  letter-spacing: 0.6px;
 }
 
+/* About Text */
 #about p {
   font-size: 1.22rem;
   font-weight: 600;
@@ -231,6 +237,7 @@ nav {
   max-width: 800px;
   margin: auto;
 }
+
 
 /* SKILLS */
 .skills-list {
@@ -357,3 +364,4 @@ footer {
   color: white;
   font-weight: bold;
 }
+
