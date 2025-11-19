@@ -49,6 +49,7 @@ nav {
   overflow: hidden;
 }
 
+/* NAV UNDERLINE HOVER */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -159,8 +160,15 @@ nav {
   text-align: center;
   max-width: 1000px;
   margin: auto;
+  transition: transform 0.25s ease;
 }
 
+/* POP-UP ON CLICK */
+.section:active {
+  transform: scale(1.03);
+}
+
+/* SECTION HEADINGS */
 .section h2 {
   font-size: 2.2rem;
   color: #ff6600;
@@ -168,8 +176,11 @@ nav {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 0.5px;
 }
 
+/* TITLE UNDERLINE ANIMATION */
 .section h2::after {
   content: "";
   width: 0px;
@@ -182,6 +193,13 @@ nav {
 
 .section h2:hover::after {
   width: 60px;
+}
+
+/* ABOUT TEXT */
+#about p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
 }
 
 /* SKILLS */
@@ -207,6 +225,11 @@ nav {
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
 }
 
+.skills-list li:active {
+  transform: scale(1.20);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+}
+
 /* PROJECTS */
 .project-gallery {
   display: grid;
@@ -227,9 +250,26 @@ nav {
   box-shadow: 0 15px 30px rgba(0,0,0,0.18);
 }
 
+.project-card:active {
+  transform: scale(1.03);
+}
+
 .project-info h3 {
   color: #ff6600;
   margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+/* PROJECT DESCRIPTION */
+.project-info p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.project-info b {
+  color: #ff6600;
+  font-weight: 700;
 }
 
 /* Website Links Styling */
@@ -266,6 +306,16 @@ nav {
   max-width: 650px;
   margin: 2rem auto 0;
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+.contact-info:active {
+  transform: scale(1.03);
 }
 
 /* FOOTER */
