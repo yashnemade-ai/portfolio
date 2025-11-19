@@ -49,7 +49,7 @@ nav {
   overflow: hidden;
 }
 
-/* NAV UNDERLINE HOVER */
+/* NAV UNDERLINE ANIMATION */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -163,14 +163,14 @@ nav {
   transition: transform 0.25s ease;
 }
 
-/* POP-UP ON CLICK */
+/* POP EFFECT ON CLICK */
 .section:active {
   transform: scale(1.03);
 }
 
-/* SECTION HEADINGS */
+/* MAIN TITLES */
 .section h2 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #ff6600;
   margin-bottom: 1rem;
   position: relative;
@@ -195,11 +195,41 @@ nav {
   width: 60px;
 }
 
-/* ABOUT TEXT */
+/* ------------------------------- */
+/* ABOUT SECTION UPGRADED */
+/* ------------------------------- */
+
+#about {
+  background: #ffffff;
+  padding: 3.5rem 1.5rem;
+  margin-top: 4rem;
+  border-radius: 18px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#about:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+#about h2 {
+  font-size: 2.6rem !important;
+  color: #ff6600;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
 #about p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #444;
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.9;
+  max-width: 800px;
+  margin: auto;
 }
 
 /* SKILLS */
@@ -260,11 +290,11 @@ nav {
   font-weight: 700;
 }
 
-/* PROJECT DESCRIPTION */
 .project-info p {
-  font-size: 1.05rem;
-  line-height: 1.7;
+  font-size: 1.12rem;
+  line-height: 1.8;
   color: #333;
+  font-weight: 500;
 }
 
 .project-info b {
@@ -272,7 +302,7 @@ nav {
   font-weight: 700;
 }
 
-/* Website Links Styling */
+/* LINKS (PROJECT + CONTACT) */
 .project-info a,
 .contact-info a {
   color: #ff6600;
@@ -298,7 +328,7 @@ nav {
   width: 100%;
 }
 
-/* CONTACT SECTION BOX */
+/* CONTACT SECTION */
 .contact-info {
   background: #ffffff;
   padding: 1.8rem;
