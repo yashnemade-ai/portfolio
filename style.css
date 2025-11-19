@@ -267,59 +267,67 @@ nav {
   box-shadow: 0 10px 25px rgba(0,0,0,0.20);
 }
 
-/* PROJECTS */
+/* PROJECTS SECTION - CARD + SHADOW + POP-UP */
 .project-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.2rem;
+  margin-top: 2rem;
 }
 
+/* Project Card */
 .project-card {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 14px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.10);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+/* Hover – Pop Up */
 .project-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
+/* Click Pop */
 .project-card:active {
   transform: scale(1.03);
+  box-shadow: 0 25px 55px rgba(0,0,0,0.20);
 }
 
+/* Title */
 .project-info h3 {
   color: #ff6600;
-  margin-bottom: .5rem;
-  font-weight: 700;
+  margin-bottom: 0.7rem;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
+/* Description */
 .project-info p {
-  font-size: 1.12rem;
-  line-height: 1.8;
+  font-size: 1.18rem;
+  line-height: 1.85;
   color: #333;
-  font-weight: 500;
+  font-weight: 550;
 }
 
+/* Highlighted text */
 .project-info b {
   color: #ff6600;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-/* LINKS (PROJECT + CONTACT) */
-.project-info a,
-.contact-info a {
+/* Website Link Styling */
+.project-info a {
   color: #ff6600;
   font-weight: 700;
   text-decoration: none;
   position: relative;
+  font-size: 1.1rem;
 }
 
-.project-info a::after,
-.contact-info a::after {
+.project-info a::after {
   content: "";
   height: 3px;
   width: 0%;
@@ -330,10 +338,10 @@ nav {
   transition: width .3s ease;
 }
 
-.project-info a:hover::after,
-.contact-info a:hover::after {
+.project-info a:hover::after {
   width: 100%;
 }
+
 
 /* CONTACT SECTION */
 .contact-info {
@@ -364,4 +372,5 @@ footer {
   color: white;
   font-weight: bold;
 }
+
 
