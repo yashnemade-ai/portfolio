@@ -163,7 +163,6 @@ nav {
   transition: transform 0.25s ease;
 }
 
-/* POP EFFECT ON CLICK */
 .section:active {
   transform: scale(1.03);
 }
@@ -180,7 +179,6 @@ nav {
   letter-spacing: 0.5px;
 }
 
-/* TITLE UNDERLINE ANIMATION */
 .section h2::after {
   content: "";
   width: 0px;
@@ -195,8 +193,7 @@ nav {
   width: 60px;
 }
 
-/* ------------------------------- */
-/* ABOUT SECTION — CARD + SHADOW + POP EFFECT */
+/* ABOUT SECTION */
 #about {
   background: #ffffff;
   padding: 3.5rem 1.5rem;
@@ -207,28 +204,23 @@ nav {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* Hover Pop-Up */
 #about:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
-/* Click Pop */
 #about:active {
   transform: scale(1.03);
   box-shadow: 0 25px 55px rgba(0,0,0,0.20);
 }
 
-/* About Heading */
 #about h2 {
   font-size: 2.6rem;
   font-weight: 800;
   color: #ff6600;
   margin-bottom: 1.5rem;
-  letter-spacing: 0.6px;
 }
 
-/* About Text */
 #about p {
   font-size: 1.22rem;
   font-weight: 600;
@@ -237,7 +229,6 @@ nav {
   max-width: 800px;
   margin: auto;
 }
-
 
 /* SKILLS */
 .skills-list {
@@ -262,12 +253,7 @@ nav {
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.15);
 }
 
-.skills-list li:active {
-  transform: scale(1.20);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.20);
-}
-
-/* PROJECTS SECTION - CARD + SHADOW + POP-UP */
+/* PROJECTS */
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -284,47 +270,44 @@ nav {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-/* Hover – Pop Up */
 .project-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
-/* Click Pop */
 .project-card:active {
   transform: scale(1.03);
-  box-shadow: 0 25px 55px rgba(0,0,0,0.20);
 }
 
-/* Title */
+/* Project Title */
 .project-info h3 {
   color: #ff6600;
   margin-bottom: 0.7rem;
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-/* Description */
+/* Project Description */
 .project-info p {
-  font-size: 1.18rem;
-  line-height: 1.85;
+  font-size: 1.22rem;
+  line-height: 1.9;
   color: #333;
-  font-weight: 550;
+  font-weight: 600;
 }
 
-/* Highlighted text */
+/* Highlighted Text */
 .project-info b {
   color: #ff6600;
   font-weight: 800;
 }
 
-/* Website Link Styling */
+/* Project Link Style */
 .project-info a {
   color: #ff6600;
   font-weight: 700;
   text-decoration: none;
   position: relative;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .project-info a::after {
@@ -342,15 +325,14 @@ nav {
   width: 100%;
 }
 
-
 /* CONTACT SECTION */
 .contact-info {
   background: #ffffff;
   padding: 1.8rem;
   border-radius: 14px;
   max-width: 650px;
-  margin: 2rem auto 0;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.10);
+  margin: 2rem auto;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.10);
   transition: transform .3s ease, box-shadow .3s ease;
 }
 
@@ -363,6 +345,34 @@ nav {
   transform: scale(1.03);
 }
 
+/* CONTACT LINKS – ORANGE HOVER + ANIMATION */
+.contact-info a {
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  transition: color .3s ease;
+}
+
+.contact-info a:hover {
+  color: #ff6600;
+}
+
+.contact-info a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: #ff6600;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  transition: width .3s ease;
+}
+
+.contact-info a:hover::after {
+  width: 100%;
+}
+
 /* FOOTER */
 footer {
   margin-top: 3rem;
@@ -372,5 +382,3 @@ footer {
   color: white;
   font-weight: bold;
 }
-
-
