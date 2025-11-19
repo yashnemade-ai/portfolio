@@ -344,6 +344,7 @@ nav {
   text-decoration: none;
   position: relative;
   transition: color .3s ease;
+  white-space: nowrap;   /* ← Forces the entire link on ONE LINE */
 }
 
 .contact-info a::after {
@@ -361,6 +362,7 @@ nav {
   width: 100%;
 }
 
+
 /* FOOTER */
 footer {
   margin-top: 3rem;
@@ -370,3 +372,4 @@ footer {
   color: white;
   font-weight: bold;
 }
+
